@@ -74,6 +74,20 @@
   {{ template "_internal/twitter_cards.html" . }}
   <!---->
   {{ end }}
+
+  <!-- IndieAuth -->
+	<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
+	<link rel="token_endpoint" href="https://micro.blog/indieauth/token" />
+
+  <!-- Micropub/sub -->
+  <link rel="micropub" href="https://micro.blog/micropub" />
+  <link rel="microsub" href="https://micro.blog/microsub" />
+
+  <!-- WebMention -->
+  <link rel="webmention" href="https://micro.blog/webmention" />
+  
+  <!-- Subscribe -->
+  <link rel="subscribe" href="https://micro.blog/users/follow" />
   
   {{ partial "microblog_head.html" . }}
 </head>
